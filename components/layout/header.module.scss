@@ -1,0 +1,36 @@
+.flexHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  span {
+    font-size: 3rem;
+    color: #288df5;
+    font-family: 'SpaceGroteskMedium';
+    line-height: 3.5rem;
+
+    b {
+      font-family: 'SpaceGroteskBold';
+    }
+  }
+}
+
+.header {
+  font-size: 1.6rem;
+  padding-top: 1rem;
+
+  nav {
+    display: flex;
+  }
+
+  button {
+    background: #44a0ff;
+    color: #fff;
+    padding: 10px 12px 6px 10px;
+    font-size: 1.7rem;
+    margin-left: 8vw;
+    border: 1px solid #3e7ab7;
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "build": {
+      "env": {
+        "FAUNA_SERVER_KEY": "KEYHERE"
+      }
+    }
+  }
+  

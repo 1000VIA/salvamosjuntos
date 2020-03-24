@@ -1,0 +1,29 @@
+.subHeader {
+  background: #44a0ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 7rem 0;
+
+  h1 {
+    font-size: 4rem;
+    font-family: SpaceGroteskBold;
+  }
+
+  input {
+    padding: 12px 12px 8px 15px;
+    font-size: 2rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    color: #0f4c8c;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #3279c1;
+
+    &::placeholder {
+      color: #3279c1;
+    }
+  }
+}

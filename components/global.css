@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'SpaceGroteskBold';
+  font-display: swap;
+  src: url('/static/fonts/SpaceGrotesk-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SpaceGroteskMedium';
+  font-display: swap;
+  src: url('/static/fonts/SpaceGrotesk-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SpaceGroteskRegular';
+  font-display: swap;
+  src: url('/static/fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  line-height: 1.65;
+  font-family: 'SpaceGroteskRegular', sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+  direction: ltr;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  background-color: #fff;
+  color: #111;
+}
+::selection {
+  background-color: #0070f3;
+  color: #fff;
+}
+[role='grid']:focus {
+  outline: none;
+}
+svg {
+  text-rendering: optimizeLegibility;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+textarea {
+  font-family: 'SpaceGroteskRegular', Arial;
+}
+button {
+  cursor: pointer;
+}
+
+code {
+  font-size: 1rem;
+}
+code:before,
+code:after {
+  content: '\`';
+}
+pre code:before,
+pre code:after {
+  content: none;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.f-reset {
+  font-size: 1rem;
+}
+
+.display-none {
+  display: none;
+}
+.display-mobile {
+  display: none;
+}
+.display-tablet {
+  display: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 640px) {
+  .display-mobile {
+    display: unset;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .display-tablet {
+    display: unset;
+  }
+  .hide-tablet {
+    display: none;
+  }
+}
+a[role='button'] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+svg {
+  shape-rendering: crispEdges;
+}
+svg path,
+svg circle {
+  shape-rendering: geometricprecision;
+}

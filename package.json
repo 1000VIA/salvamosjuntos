@@ -1,0 +1,57 @@
+{
+  "name": "salvamosjuntos",
+  "version": "1.0.0",
+  "description": "A great project!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "analyze": "cross-env ANALYZE=true yarn build",
+    "prettier-fix": "prettier --write \"**/*.{js,json,ts,tsx,md,mdx}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "lint-staged": {
+    "*.{js,json,ts,tsx,md,mdx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": "https://github.com/julianux/x-project.git",
+  "author": "xTeam",
+  "license": "Copyright ModelNetwork SAS",
+  "dependencies": {
+    "cookie": "^0.4.0",
+    "dotenv": "^8.2.0",
+    "faunadb": "^2.13.0",
+    "next": "^9.3.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-hook-form": "^5.1.1",
+    "react-icons": "^3.9.0",
+    "sass": "^1.26.3",
+    "swr": "^0.1.18"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.3.3",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^13.9.0",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "cross-env": "^7.0.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
+    "typescript": "^3.8.3"
+  }
+}
